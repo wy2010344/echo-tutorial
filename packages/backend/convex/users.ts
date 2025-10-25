@@ -6,6 +6,10 @@ export const getMany = query({
     if (identity === null) {
       throw new Error('Not authenticated')
     }
+
+    if (!identity.orgId) {
+      throw new Error('Missing organization')
+    }
     const users = await ctx.db.query('users').collect()
 
     return users
