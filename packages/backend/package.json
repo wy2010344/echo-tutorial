@@ -1,0 +1,23 @@
+{
+  "name": "@workspace/backend",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "convex dev",
+    "setup": "convex dev --until-success",
+    "lint": "eslint . --max-warnings 0"
+  },
+  "dependencies": {
+    "convex": "^1.25.0",
+    "openai": "^6.7.0"
+  },
+  "devDependencies": {
+    "@workspace/eslint-config": "workspace:*",
+    "@workspace/typescript-config": "workspace:*",
+    "typescript": "^5.9.2"
+  },
+  "exports": {
+    "./convex": "./convex/*.ts"
+  }
+}
