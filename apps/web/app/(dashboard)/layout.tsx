@@ -1,10 +1,10 @@
 import React from 'react'
-import { AuthLayout } from '../auth/ui/components/auth-layout'
+import { AuthGuard } from '../auth/ui/components/auth-guard'
 
 const Component: React.FC<{
   children?: React.ReactNode
 }> = function ({ children }) {
-  return <AuthLayout>{children}</AuthLayout>
+  return <AuthGuard>{children}</AuthGuard>
 }
 
 export default Component
