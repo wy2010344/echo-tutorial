@@ -17,9 +17,9 @@ export default function Page() {
     <>
       <Authenticated>
         <UserButton />
-        <OrganizationSwitcher hidePersonal />
+        {/* <OrganizationSwitcher hidePersonal /> */}
         <div className="flex items-center justify-center min-h-svh">
-          {JSON.stringify(users, null, 2)}
+          {/* {JSON.stringify(users, null, 2)} */}
           <Button
             onClick={() => {
               addUser()
